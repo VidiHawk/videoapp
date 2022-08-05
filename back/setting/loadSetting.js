@@ -20,7 +20,9 @@ loadSetting.initializeEnvironmentSettings = () => {
         process.env[key] = nodeEnv[key];
       }
     });
+
     const config = require(`./setting.${nodeEnv.NODE_ENV}`).config;
+    console.log('config: ', config);
 
     superConfigHandler.setConfig(config);
   } catch (e) {
