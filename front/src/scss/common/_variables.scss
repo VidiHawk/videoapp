@@ -1,0 +1,41 @@
+//General Color Description
+$colorGrey: #555555;
+$colorGreyMedium: #aaaaaa;
+$colorGreyLight: #e6e6e6;
+$colorGreyLight2: #d4d5d5;
+$colorPrimary: #5f99b6;
+$colorGreyDark: #2a2b2b;
+
+$colorGreen: #58ce93;
+$colorRed: #ff004a;
+$colorBlue: #cdd6df;
+
+//General Variables
+$color-border-focus: $colorGrey;
+$color-disabled: $colorGreyLight;
+$color-title: $colorGreyMedium;
+$color-border-disabled: $colorGreyLight2;
+
+//Specific Variables
+
+//SearchBox
+$search-border-color: #d7dee5;
+$search-border-underline: $colorGreyDark;
+
+//Select
+$select-border-color: #f1f1f1;
+$select-border-color-disabled: #f8f8f8;
+
+//TextField
+$textfield-border-color: $colorGreyLight2;
+$textfield-input-color-disabled: $colorGreyLight2;
+
+$textfield-color-error: $colorRed;
+$textfield-color-success: $colorGreen;
+
+//TextArea
+$textarea-border-color: $colorGreyLight2;
+$textarea-input-color-disabled: $colorGreyLight2;
+
+//MenuIcon
+$menu-background-color: rgba(0, 0, 0, 0.8);

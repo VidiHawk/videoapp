@@ -1,0 +1,120 @@
+[role='button'] {
+  outline: none;
+}
+.primary-btn {
+  background-color: white;
+  border-radius: 4px;
+  border: 2px solid var(--primary-color);
+  color: black;
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  span{
+    font-size: 18px !important;
+  }
+  &:hover {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color);
+    color:#fff !important;
+    span a{
+      color:#fff !important;
+    }
+    span{
+      color:#fff !important;
+    }
+  }
+  &:focus {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    color:#fff;
+  }
+  &:visited {
+    background-color: white;
+    border-radius: 4px;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+  &:disabled {
+    background-color: white;
+    border-radius: 4px;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    opacity: 0.4;
+  }
+}
+
+.secondary-btn {
+  background-color: white;
+  border-radius: 4px;
+  border: 2px solid #5f99b6;
+  color: #2a2b2b;
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  &:hover {
+    background-color: #5f99b6;
+    color: white;
+    border-color: #ffffff;
+  }
+
+  &:focus {
+    background-color: #5f99b6;
+    color: white;
+  }
+
+  &:visited {
+    background-color: white;
+    border: 2px solid #5f99b6;
+  }
+
+  &:disabled {
+    background-color: white;
+    border-radius: 4px;
+    border: 2px solid #2a2b2b;
+    color: #2a2b2b;
+    opacity: 0.4;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+}
+
+.primary-btn-link {
+  background: none;
+  color: var(--primary-color);
+  font-weight: 700;
+  border: none;
+  font-size: 1rem;
+}
+
+.secondary-btn-link {
+  background: none;
+  color: var(--grey-color);
+  border: none;
+  font-size: 1rem;
+}
+
+.button-black {
+  background: #2a2b2b !important;
+  border: 2px solid #f5f7f9;
+  color: white;
+  opacity: 1;
+  &:focus,
+  &:hover {
+    color: white;
+  }
+  &:disabled {
+    background: #2a2b2b !important;
+    border: 2px solid #f5f7f9;
+    color: white;
+    opacity: 0.4;
+    &:hover,
+    &:focus,
+    &:active {
+      color: white !important;
+      opacity: 0.25;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.club-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  right: -100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  top: 0;
+  z-index: 10;
+  align-items: center;
+  transition: 0.2s right linear;
+  -webkit-transition: 0.2s right linear;
+  -moz-transition: 0.2s right linear;
+  -ms-transition: 0.2s right linear;
+  -o-transition: 0.2s right linear;
+  &.visible {
+    right: 0;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    text-align: left;
+
+    .label-check-box {
+      flex: 1;
+      color: #555555;
+      font-size: 1rem;
+    }
+  }
+  .auth-container {
+    width: 464px;
+    margin-left: auto;
+    position: relative;
+  }
+  &.visible:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,40 @@
+.empty-page {
+  width: 100%;
+ text-align: center;
+ padding: 90px 5vw 20px;
+ font-size: 16px;
+ height: 100%;
+ top: 0;
+ left: 0;
+ right: 0;
+ &__text {
+   & > p{
+     @media (min-width: 768px) {
+       font-weight: 300;
+       font-size: 18px;
+       line-height: 180%;
+     }
+   }
+   & > p:not(:last-child) {
+     margin-bottom: 8px;
+   }
+   & > p:last-child {
+     margin-bottom: 0px;
+   }
+ }
+ & h2 {
+   font-weight: 900;
+   font-size: 24px;
+   margin-bottom: 32px;
+   @media (min-width: 768px){
+     font-size: 32px;
+   }
+ }
+ & button {
+   max-width: 230px;
+   margin-top: 40px;
+   span a{
+     color: #2a2b2b;
+   }
+ }
+}

@@ -1,0 +1,61 @@
+$checkbox-border-color: #BFD6E2;
+$checkbox-selected-color: #5F99B6;
+$checkbox-disabled-color: #DFEBF0;
+
+
+.cstm-checkbox {
+  & .ant-checkbox-inner{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $checkbox-border-color;
+    &:after {
+      content: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%220%200%2016%2012%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%3Cpath%20d%3D%22M13.9708%200.810619C14.2522%200.529273%2014.7084%200.529273%2014.9897%200.810619C15.2495%201.07032%2015.2695%201.47898%2015.0497%201.76159L14.9897%201.82946L5.62942%2011.1886C5.36968%2011.4483%204.96098%2011.4683%204.67832%2011.2485L4.61044%2011.1886L1.01182%207.59043C0.730436%207.30909%200.730436%206.85293%201.01182%206.57159C1.27156%206.31188%201.68026%206.2919%201.96291%206.51165L2.03079%206.57159L4.86517%209.40538C5.00588%209.54603%205.23397%209.54603%205.37467%209.40537L13.9708%200.810619Z%22%20fill%3D%22%23BFD6E2%22/%3E%0A%3C/svg%3E%0A');
+      width: 16px;
+      height: 20px;
+      border: 0;
+      transform: none;
+      left: 12px;
+      top: 12px;
+      display: block;
+      opacity: 1;
+      transform: none;
+    }
+  }
+  &:hover {
+    & .ant-checkbox-inner {
+      border-color: $checkbox-selected-color;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+  &.ant-checkbox-wrapper-checked {
+    & .ant-checkbox-inner {
+      background: $checkbox-selected-color;
+      border-color: transparent;
+      &:after {
+        content: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%220%200%2016%2012%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%3Cpath%20d%3D%22M13.9708%200.810619C14.2522%200.529273%2014.7084%200.529273%2014.9897%200.810619C15.2495%201.07032%2015.2695%201.47898%2015.0497%201.76159L14.9897%201.82946L5.62942%2011.1886C5.36968%2011.4483%204.96098%2011.4683%204.67832%2011.2485L4.61044%2011.1886L1.01182%207.59043C0.730436%207.30909%200.730436%206.85293%201.01182%206.57159C1.27156%206.31188%201.68026%206.2919%201.96291%206.51165L2.03079%206.57159L4.86517%209.40538C5.00588%209.54603%205.23397%209.54603%205.37467%209.40537L13.9708%200.810619Z%22%20fill%3D%22%23FFFFFF%22/%3E%0A%3C/svg%3E%0A');
+      }
+    }
+    & .ant-checkbox-checked {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &.ant-checkbox-wrapper-disabled {
+    & .ant-checkbox-disabled {
+    
+      & .ant-checkbox-inner {
+        border-color: $checkbox-disabled-color !important;
+        background-color: white;
+        &:after {
+          content: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%220%200%2016%2012%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%3Cpath%20d%3D%22M13.9708%200.810619C14.2522%200.529273%2014.7084%200.529273%2014.9897%200.810619C15.2495%201.07032%2015.2695%201.47898%2015.0497%201.76159L14.9897%201.82946L5.62942%2011.1886C5.36968%2011.4483%204.96098%2011.4683%204.67832%2011.2485L4.61044%2011.1886L1.01182%207.59043C0.730436%207.30909%200.730436%206.85293%201.01182%206.57159C1.27156%206.31188%201.68026%206.2919%201.96291%206.51165L2.03079%206.57159L4.86517%209.40538C5.00588%209.54603%205.23397%209.54603%205.37467%209.40537L13.9708%200.810619Z%22%20fill%3D%22%23DFEBF0%22/%3E%0A%3C/svg%3E%0A');
+        }
+      }
+    }
+    
+  }
+}

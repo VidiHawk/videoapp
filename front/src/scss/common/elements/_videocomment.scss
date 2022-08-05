@@ -1,0 +1,60 @@
+.video-comment-wrapper {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  padding-left: 16px;
+  padding-right: 72px;
+  z-index: 4;
+
+  .total-count-wrapper {
+    margin-bottom: 8px;
+
+    .total-count {
+      background-color: #ffffff85;
+      height: 16px;
+      border-radius: 4px;
+      padding-left: 8px;
+      padding-right: 8px;
+      color: white;
+      font-size: 12px;
+
+      span {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .infinite-scroll-wrapper {
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .comment-list {
+    margin-top: 16px;
+    height: 347px;
+    overflow-y: scroll;
+
+    ::-webkit-scrollbar {
+      width: 0; /* Remove scrollbar space */
+      background: transparent; /* Optional: just make scrollbar invisible */
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .video-comment-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    left: 15%;
+    right: 15%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .video-comment-wrapper {
+    left: 30%;
+    right: 30%;
+  }
+}

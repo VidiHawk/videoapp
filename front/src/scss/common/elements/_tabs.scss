@@ -1,0 +1,146 @@
+.tabs-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 45px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  &--show {
+    opacity: 1;
+    transition: opacity 0.1s 0.45s linear;
+  }
+
+  .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    cursor: pointer;
+    white-space: nowrap;
+    opacity: .7;
+
+    &:first-child {
+      margin-left: auto;
+    }
+    
+    &:last-child {
+      margin-right: auto;
+    }
+  }
+
+  .tab-active {
+    opacity: 1;
+    .tab-underline {
+      width: 6px;
+      height: 6px;
+      border-radius: 6px;
+      background-color: #fff;
+    }
+  }
+
+  .tab-inactive {
+    padding: 0 24px;
+
+    .tab-underline {
+      width: 4px;
+      height: 4px;
+      background-color: transparent;
+      margin-top: 2px;
+    }
+  }
+
+  &--navPanel {
+    & .tab {
+      .tab-title {
+        color:#fff;
+      }
+      &.tab-active {
+        & .tab-title {
+          text-shadow: none;
+        }
+        & .tab-underline {
+          background-color: #fff !important;
+        }
+      }
+
+      &.tab-inactive {
+        & .tab-title {
+          text-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.tabs-container-white {
+  .tab-active {
+    color: white;
+
+    .tab-underline {
+      background-color: white;
+    }
+  }
+  .tab-title {
+    a{
+      color: #fff;
+    }
+  }
+  .tab-inactive {
+    color: #ffffff80;
+  }
+}
+
+.tabs-container-black {
+  .tab-title {
+    text-shadow: none !important;
+    a{
+      color: #000000 !important;
+      opacity: .5;
+    }
+  }
+
+  .tab-active {
+    color: black;
+
+    .tab-underline {
+      background-color: black !important;
+    }
+    .tab-title {
+      a{
+        opacity: 1;
+      }
+    }
+    
+  }
+
+  .tab-inactive {
+    color: #00000080;
+
+    .tab-title {
+      text-shadow: none !important;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tabs-container {
+    font-size: 1.2rem;
+    &--navPanel {
+      //padding-bottom: 16px;
+    }
+  }
+
+  .tabs-container-black {
+    justify-content: center !important;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,18 @@
+const LOGIN = "user/LOGIN";
+const REGISTER = "user/REGISTER";
+const ME = "user/ME";
+const EDIT_PROFILE = "user/EDIT_PROFILE";
+const CHANGE_PASSSWORD = "user/CHANGE_PASSSWORD";
+const FORGOT_PASSWORD = "user/FORGOT_PASSWORD";
+const RESET_PASSWORD = "user/RESET_PASSWORD";
+
+
+export default {
+	LOGIN,
+	REGISTER,
+	ME,
+	EDIT_PROFILE,
+	CHANGE_PASSSWORD,
+	FORGOT_PASSWORD,
+	RESET_PASSWORD
+};

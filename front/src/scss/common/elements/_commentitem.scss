@@ -1,0 +1,56 @@
+/* tile uploaded pictures */
+.comment-item {
+  .ant-comment-inner {
+    padding: 0 0 14px 0;
+  }
+
+  .ant-comment-avatar img {
+    width: 24px;
+    height: 24px;
+    border-radius: 0;
+  }
+
+  .ant-comment-content-author {
+    margin-bottom: 0;
+  }
+
+  .comment-thumb-image-wrapper {
+    cursor: pointer;
+  }
+
+  .comment-action {
+    padding-left: 8px;
+    margin-top: 4px;
+    cursor: auto;
+  }
+
+  [class*='-col-rtl'] .comment-action {
+    padding-right: 8px;
+    padding-left: 0;
+  }
+
+  .ant-comment-actions {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .thumb-icon {
+    font-size: 16px;
+    color: white;
+  }
+
+  .ant-comment-actions > li + li {
+    margin-left: 24px;
+  }
+
+  .img-hor-vert {
+    -moz-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    -webkit-transform: scale(1, -1);
+    transform: scale(1, -1);
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+}

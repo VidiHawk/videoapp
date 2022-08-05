@@ -1,0 +1,74 @@
+.top-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  //height: 80px;
+  //height: 50px; // top bar navigation design issue
+  //height: 50px; for fix navbar text issue AVS-249
+  overflow-y: hidden;
+  padding: 0;
+  z-index: 5;
+
+  .img-logo {
+    width: 96px;
+    height: 46.7px;
+    margin-right: 24px;
+  }
+  & .tab {
+    &.tab-active {
+      & .tab-title {
+        // text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+      }
+    }
+    &.tab-inactive {
+      & .tab-title {
+        // text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+.top-bar-container-menu {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  z-index: 5;
+  .logo-container-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 0 16px 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-bar-container {
+    padding: 24px 16px 0 16px !important;
+  }
+}
+
+/*HIDE scrollbar for Chrome, Safari, Opera*/
+.top-bar-container::-webkit-scrollbar {
+  display: none;
+}
+
+.top-bar-container {
+  -ms-overflow-style: none; /*IE and EDGE*/
+  scrollbar-width: none; /*Firefox*/
+}
+
+/*HIDE scrollbar for Chrome, Safari, Opera*/
+.tabs-container::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs-container {
+  -ms-overflow-style: none; /*IE and EDGE*/
+  scrollbar-width: none; /*Firefox*/
+}

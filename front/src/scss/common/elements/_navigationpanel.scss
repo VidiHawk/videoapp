@@ -1,0 +1,23 @@
+.luxe-npanel-bottom {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  padding: 8px 5px;
+  & .luxe-subName {
+    color: white;
+    text-transform: uppercase;
+    padding: 8px 0px;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    flex-shrink: 0;
+    width: 120px;
+
+    &--isActive {
+      background: rgba(255, 255, 255, 0.4);
+    }
+  }
+}

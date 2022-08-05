@@ -1,0 +1,93 @@
+.language-panel-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  right: -100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  top: 0;
+  z-index: 10;
+  align-items: center;
+  transition: 0.2s right linear;
+  -webkit-transition: 0.2s right linear;
+  -moz-transition: 0.2s right linear;
+  -ms-transition: 0.2s right linear;
+  -o-transition: 0.2s right linear;
+
+  &.visible {
+    right: 0;
+  }
+
+  .bg-left {
+    background-color: #00000080;
+    height: 100vh;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    text-align: left;
+
+    .label-check-box {
+      flex: 1;
+      color: #555555;
+      font-size: 1rem;
+    }
+  }
+
+  .lang-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    color: #AAAAAA;
+    background-color: #F8F8F8;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+
+    &.active {
+      background-color: $colorPrimary;
+      color: white;
+    }
+  }
+
+  .lang-list-container {
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+}
+
+/*HIDE scrollbar for Chrome, Safari, Opera*/
+.lang-list-container::-webkit-scrollbar {
+  display: none;
+}
+
+.lang-list-container{
+  -ms-overflow-style: none; /*IE and EDGE*/
+  scrollbar-width: none; /*Firefox*/
+}
+
+/*HIDE scrollbar for Chrome, Safari, Opera*/
+.lang-list-container::-webkit-scrollbar {
+  display: none;
+}
+
+.lang-list-container{
+  -ms-overflow-style: none; /*IE and EDGE*/
+  scrollbar-width: none; /*Firefox*/
+}

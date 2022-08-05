@@ -1,0 +1,48 @@
+.right-bar-container {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 99;
+
+  
+  .fab-container {
+    .clickable-area {
+      padding: 10px 16px;
+    }
+  }
+}
+
+.left-bar-container {
+  position: fixed;
+  bottom: 60px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .fab-container + .fab-container {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .right-bar-container {
+    right: 8px !important;
+  }
+
+  .left-bar-container {
+    left: 24px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .right-bar-container {
+    bottom: 80px;
+  }
+  .left-bar-container {
+    bottom: 80px;
+  }
+}

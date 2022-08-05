@@ -1,0 +1,13 @@
+const GET_LIST = "comment/GET_LIST";
+const POST_COMMENT = "comment/POST_COMMENT";
+const LIKE_COMMENT = "comment/LIKE_COMMENT";
+const DELETE_COMMENT = "comment/DELETE_COMMENT";
+const DISLIKE_COMMENT = "comment/DISLIKE_COMMENT";
+
+export default {
+	GET_LIST,
+	POST_COMMENT,
+	LIKE_COMMENT,
+	DELETE_COMMENT,
+	DISLIKE_COMMENT
+};

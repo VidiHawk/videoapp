@@ -1,0 +1,22 @@
+@import "./auth/login";
+@import "./auth/forgotpassword";
+@import "./auth/register";
+@import "./auth/registersuccess";
+@import "./auth/resetpassword";
+
+.login-popup{
+ position: fixed;
+ z-index: 100;
+ top: 0;
+ a{
+  color: #5F99B6;
+ }
+ .logo-container svg{
+  // margin-left: 31vw;
+  margin-top: 0rem;
+ }
+ .form-container {
+  margin-top: 24px;
+ }
+}
+

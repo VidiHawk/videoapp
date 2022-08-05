@@ -1,0 +1,47 @@
+.cstm-selectwrapper {
+  position: relative;
+  font-weight: 500;
+}
+
+.ant-select.cstm-select {
+  border-radius: 4px;
+  height: 32px;
+  width: 100%;
+
+  font-weight: 500;
+  font-size: 14px;
+  color: $color-title;
+
+  & .ant-select-selector {
+    border-color: $select-border-color;
+    border-radius: 4px;
+  }
+  &:hover:not(.ant-select-disabled) {
+    & .ant-select-selector {
+      border-color: $color-border-focus;
+      color: black;
+    }
+  }
+  &.ant-select-focused:not(.ant-select-disabled) {
+    & .ant-select-selector {
+      border-color: $select-border-color;
+      box-shadow: none;
+      color: black;
+    }
+  }
+  &.ant-select-open {
+    & .ant-select-selector {
+      border-color: $color-border-focus;
+      box-shadow: none;
+      color: black;
+    }
+  }
+
+  &.ant-select-disabled {
+    & .ant-select-selector {
+      color: $color-disabled;
+      background: $select-border-color-disabled;
+      border-color: $select-border-color-disabled;
+    }
+  }
+}

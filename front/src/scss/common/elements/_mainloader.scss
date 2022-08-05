@@ -1,0 +1,38 @@
+.luxe-init-loading {
+  width: 100vw;
+  height: 100vh;
+  background: #f5f7f9;
+  background-size: 65%;
+  overflow-y: auto;
+  position: relative;
+  background-image: url('/images/illustration_mobile_plant_up.svg'),
+    url('/images/illustration_mobile_plant_down.svg');
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  z-index: 20;
+  .luxe-init-loading-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    width: 80%;
+    & svg {
+      width: 150px;
+      height: auto;
+    }
+  }
+  & .ant-progress,
+  & .ant-progress-outer,
+  & .ant-progress-inner {
+    width: 220px;
+  }
+  &__title {
+    font-size: 36px;
+    text-align: center;
+  }
+}

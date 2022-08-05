@@ -1,0 +1,21 @@
+@import 'common';
+@import '../common/variables';
+@import 'header';
+@import 'footer';
+@import 'product';
+@import 'auth';
+@import 'user';
+@import 'settings';
+@import 'discover';
+@import 'search';
+@import 'live';
+@import 'cart';
+@import 'myproductreviews';
+@import 'myarea';
+@import 'video';
+@import 'static';
+
+a, a:active, a:hover{
+ color: #fff;
+}
+

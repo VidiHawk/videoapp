@@ -1,0 +1,9 @@
+.luxe-spin.ant-spin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+  & .ant-spin-dot-item {
+    background-color: #5E97B6;
+  }
+}

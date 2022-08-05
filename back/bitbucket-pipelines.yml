@@ -1,0 +1,26 @@
+# This is an example Starter pipeline configuration
+# Use a skeleton to build, test and deploy using manual and parallel steps
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: node:12.21.0
+
+pipelines:
+  branches:
+   production:
+    - parallel:
+      - step:
+          name: 'Build and Test'
+          script:
+            - echo "Your build and test goes here..."
+            - npm install
+    # The following deployment steps will be executed for each pipeline run. To configure your steps and conditionally deploy see https://support.atlassian.com/bitbucket-cloud/docs/configure-bitbucket-pipelinesyml/
+    - step:
+        name: 'Deployment to Prod'
+        deployment: prod
+        script:
+          - echo "Your deployment to develop script goes here..."
+          - pipe: atlassian/ssh-run:0.3.0
+            variables:
+              SSH_USER: 'ubuntu'
+              SERVER: 35.236.14.54
+              COMMAND: './deploy_back.sh'

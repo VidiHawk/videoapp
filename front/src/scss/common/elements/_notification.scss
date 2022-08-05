@@ -1,0 +1,37 @@
+$notification-color-succes: #58CE93;
+$notification-color-error: #FF004A;
+
+.cstm-notification {
+  padding: 0;
+  border-radius: 4px;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: none;
+  & .ant-notification-notice-icon {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    text-align: center;
+    line-height: 30px;
+  }
+  & .ant-notification-notice-close {
+    top:0;
+    right: 18px;
+  }
+  & .ant-notification-notice-message {
+    margin-left: 54px;
+  }
+  &__success {
+    box-shadow: 0 0 1px $notification-color-succes;
+    & .ant-notification-notice-icon  {
+      background-color: $notification-color-succes
+    }
+  }
+  &__error {
+    box-shadow: 0 0 1px $notification-color-error;
+    & .ant-notification-notice-icon  {
+      background-color: $notification-color-error;
+      line-height: 34px;
+    }
+  }
+}

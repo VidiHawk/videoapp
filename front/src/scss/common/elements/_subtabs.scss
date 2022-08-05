@@ -1,0 +1,110 @@
+.subtabs-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  justify-content: left;
+  padding: 0 16px;
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--navigationPanel {
+    & > div {
+      flex-shrink: 0;
+    }
+  }
+
+  & > div {
+    height: 40px;
+    font-weight: 700;
+  }
+
+  .tab {
+    padding: 0 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    opacity: .7;
+    &:first-child {
+      margin-left: auto;
+    }
+    
+    &:last-child {
+      margin-right: auto;
+    }
+  }
+  .tab-active {
+    opacity: 1;
+    .tab-underline {
+      height: 4px;
+      width: 86%;
+      margin-bottom: 4px;
+      border-radius: 2px 2px 0 0;
+      background-color: #fff;
+    }
+  }
+
+  .tab-inactive {
+    .tab-underline {
+      height: 4px;
+      background-color: transparent;
+      margin-top: 2px;
+    }
+  }
+}
+
+.subtabs-container-white {
+  .tab-active {
+    color: white;
+
+    .tab-underline {
+      background-color: white;
+    }
+  }
+
+  .tab-inactive {
+    color: #ffffff80;
+  }
+}
+
+.subtabs-container-black {
+  .tab-active {
+    color: black !important;
+
+    .tab-underline {
+      background-color: black !important;
+    }
+  }
+
+  .tab-inactive {
+    color: #00000080 !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subtabs-container {
+    justify-content: center !important;
+    font-size: 14px;
+  }
+}
+
+/*HIDE scrollbar for Chrome, Safari, Opera*/
+.subtabs-container::-webkit-scrollbar {
+  display: none;
+}
+
+.subtabs-container {
+  -ms-overflow-style: none; /*IE and EDGE*/
+  scrollbar-width: none; /*Firefox*/
+}

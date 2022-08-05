@@ -1,0 +1,61 @@
+.cstm-textfield {
+  position: relative;
+  font-weight: 500;
+  &__label {
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    color: $color-title;
+  }
+
+  &__input {
+    border-radius: 4px;
+    height: 48px;
+    min-width: 200px;
+    width: 100%;
+    border-color: $textfield-border-color;
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+    &::placeholder {
+      color: $color-title;
+    }
+    &:focus,
+    &:hover {
+      border-color: $color-border-focus;
+      box-shadow: none;
+    }
+  }
+
+  &__error-message {
+    font-size: 12px;
+    color: $textfield-color-error;
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+  }
+
+  &--disabled {
+    & .cstm-textfield__input--disabled {
+      background-color: white;
+      border-color: $color-disabled;
+      color: $textfield-input-color-disabled;
+      &::placeholder {
+        color: $color-disabled;
+      }
+    }
+  }
+
+  &--success {
+    & .cstm-textfield__input {
+      border-color: $textfield-color-success;
+    }
+  }
+
+  &--error {
+    & .cstm-textfield__input {
+      border-color: $textfield-color-error;
+    }
+  }
+}

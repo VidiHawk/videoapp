@@ -1,0 +1,17 @@
+.DS_Store
+node_modules
+public/sw.js
+public/hindi/dist/*
+public/hindi/sw.js
+public/dist/*
+public/health/dist/*
+public/health/sw.js
+build
+npm-debug.log
+html/
+#src/config/index.js
+/nbproject/
+package-lock.json
+.idea
+newrelic_agent.log
+yarn.lock
