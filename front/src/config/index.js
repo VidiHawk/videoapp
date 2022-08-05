@@ -100,7 +100,7 @@ let config = {
   SITE_ID: "xsandlriehwmqpdhk",
   DEFAULT_CATEGORY_SLUG: "whats-new",
   DEFAULT_PARENT_CATEGORY_SLUG: "discover",
-  CONTACT_EMAIL: "info@emkbh.com",
+  CONTACT_EMAIL: "info@vidiren.com",
   GOOGLE_KEY: "AIzaSyDq1QGour8SA6icZvbv72Ouy5Ram8yvSWM",
 };
 
